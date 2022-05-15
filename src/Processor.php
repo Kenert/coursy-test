@@ -1,6 +1,6 @@
 <?php
 
-namespace Kenert\CoursyTest\Processors;
+namespace Kenert\CoursyTest;
 
 interface Processor
 {

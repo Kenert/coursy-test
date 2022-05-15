@@ -1,9 +1,9 @@
 <?php
 
-namespace Kenert\CoursyTest\Processors;
+namespace Kenert\CoursyTest\Input;
 
 use Exception;
-use Kenert\CoursyTest\DataTransferObjects\File;
+use Kenert\CoursyTest\Processor;
 
 class GetInput implements Processor
 {

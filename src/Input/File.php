@@ -1,6 +1,6 @@
 <?php
 
-namespace Kenert\CoursyTest\DataTransferObjects;
+namespace Kenert\CoursyTest\Input;
 
 class File
 {

@@ -1,8 +1,10 @@
 <?php /** @noinspection PhpNoReturnAttributeCanBeAddedInspection */
 
-namespace Kenert\CoursyTest\Processors;
+namespace Kenert\CoursyTest\Output;
 
-class StandardOutput implements Processor
+use Kenert\CoursyTest\Processor;
+
+class SendOutput implements Processor
 {
 
     public function process(mixed $data): void
