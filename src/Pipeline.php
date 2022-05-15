@@ -2,8 +2,6 @@
 
 namespace Kenert\CoursyTest;
 
-use Kenert\CoursyTest\Processors\Processor;
-
 class Pipeline
 {
     private array $processors = [];
