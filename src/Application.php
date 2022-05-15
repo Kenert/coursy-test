@@ -3,8 +3,8 @@
 namespace Kenert\CoursyTest;
 
 use Exception;
-use Kenert\CoursyTest\Processors\InputProcessor;
-use Kenert\CoursyTest\Processors\OutputProcessor;
+use Kenert\CoursyTest\Processors\GetInput;
+use Kenert\CoursyTest\Processors\StandardOutput;
 
 class Application
 {
@@ -20,8 +20,8 @@ class Application
     {
         $this->pipeline = new Pipeline();
 
-        $this->pipeline->add(new InputProcessor());
-        $this->pipeline->add(new OutputProcessor());
+        $this->pipeline->add(new GetInput());
+        $this->pipeline->add(new StandardOutput());
     }
 
     private function init(): void
