@@ -3,8 +3,9 @@
 namespace Kenert\CoursyTest;
 
 use Exception;
-use Kenert\CoursyTest\Processors\GetInput;
-use Kenert\CoursyTest\Processors\StandardOutput;
+use Kenert\CoursyTest\Format\MatchFormat;
+use Kenert\CoursyTest\Input\GetInput;
+use Kenert\CoursyTest\Output\SendOutput;
 
 class Application
 {
@@ -21,7 +22,8 @@ class Application
         $this->pipeline = new Pipeline();
 
         $this->pipeline->add(new GetInput());
-        $this->pipeline->add(new StandardOutput());
+        $this->pipeline->add(new MatchFormat());
+        $this->pipeline->add(new SendOutput());
     }
 
     private function init(): void
