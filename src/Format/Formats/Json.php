@@ -2,7 +2,7 @@
 
 namespace Kenert\CoursyTest\Format\Formats;
 
-class Json extends BaseFormat implements DataFormat
+class Json extends BaseFormat
 {
     public function formatData(): void
     {
