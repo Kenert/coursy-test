@@ -1,4 +1,5 @@
 # How to use
+Requires PHP 8.1
 ```
 php index.php -p examples/amazon.json
 php index.php -p examples/facebook.csv
