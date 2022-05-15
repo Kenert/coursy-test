@@ -1,0 +1,17 @@
+{
+  "name": "kenert/coursy-test",
+  "autoload": {
+    "psr-4": {
+      "Kenert\\CoursyTest\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Kenert Kulu",
+      "email": "kenertkulu@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.1"
+  }
+}
