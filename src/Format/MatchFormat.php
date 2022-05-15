@@ -12,7 +12,6 @@ class MatchFormat implements Processor
     public function process($data): array
     {
         $extension = Extension::from($data->getExtension());
-
         $format = FormatFactory::create($extension, $data->getContents());
 
         return $format->getFormattedData();

@@ -6,6 +6,7 @@ use Exception;
 use Kenert\CoursyTest\Format\MatchFormat;
 use Kenert\CoursyTest\Input\GetInput;
 use Kenert\CoursyTest\Output\SendOutput;
+use ValueError;
 
 class Application
 {
@@ -32,6 +33,8 @@ class Application
             $this->pipeline->process();
         } catch (Exception $e) {
             die($e->getMessage());
+        } catch (ValueError $e) {
+            die('That file extension is not supported');
         }
     }
 }
